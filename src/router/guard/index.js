@@ -1,0 +1,1 @@
+export { setupRouterGuard } from './permission';
