@@ -1,8 +1,8 @@
 {
-  "name": "@teaghy/NaiveUI-Admin",
+  "name": "naive-vue3-template",
   "type": "module",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "packageManager": "pnpm@9.1.1",
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
