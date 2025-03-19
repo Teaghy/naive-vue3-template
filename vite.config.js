@@ -14,6 +14,7 @@ const baseSrc = fileURLToPath(new URL('./src', import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/naive-vue3-template/',
   plugins: [
     eslintPlugin(),
     vue(),
