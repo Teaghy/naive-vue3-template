@@ -1,25 +1,27 @@
 <template>
-  <!-- <div class="min-h-screen flex items-center justify-center bg-gray-100"> -->
-
-  <!-- <div class="login-form-error-msg"></div> -->
-  <n-card class="w-full shadow-lg">
-    <div class="font-size-24 font-500 line-height-32">
+  <n-card class="w-full shadow-lg" hoverable>
+    <div class="text-center font-size-24 font-500 line-height-32">
       Naive UI Admin
     </div>
-    <div class="font-size-16 color-gray line-height-24">
-      Naive UI Admin
-    </div>
-    <div class="m-t-32 w-320">
+    <div class="m-t-24 w-320">
       <n-form ref="formRef" :model="formData" :rules="rules">
         <n-form-item label="用户名" path="username">
-          <n-input v-model:value="formData.username" placeholder="请输入用户名" />
+          <n-input v-model:value="formData.username" placeholder="请输入用户名">
+            <template #prefix>
+              <n-icon><MaterialSymbolsLightPerson /></n-icon>
+            </template>
+          </n-input>
         </n-form-item>
         <n-form-item label="密码" path="password">
           <n-input
             v-model:value="formData.password"
             type="password"
             placeholder="请输入密码"
-          />
+          >
+            <template #prefix>
+              <n-icon><SolarLockLinear /></n-icon>
+            </template>
+          </n-input>
         </n-form-item>
         <n-button
           type="primary"
@@ -31,14 +33,14 @@
         </n-button>
       </n-form>
     </div>
-
-    <!-- </div> -->
   </n-card>
 </template>
 
 <script setup>
 import { useMessage } from 'naive-ui';
 import { useRouter } from 'vue-router';
+import MaterialSymbolsLightPerson from '~icons/material-symbols-light/person';
+import SolarLockLinear from '~icons/solar/lock-linear';
 
 const message = useMessage();
 const formRef = ref(null);
@@ -66,7 +68,6 @@ function handleSubmit() {
       setTimeout(() => {
         loading.value = false;
         message.success('登录成功');
-
         router.push({ name: 'Workplace' });
       }, 2000);
     }
