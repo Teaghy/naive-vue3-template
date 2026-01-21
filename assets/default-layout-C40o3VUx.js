@@ -1,0 +1,1 @@
+import{et as e,ft as t,mt as n}from"./index-ghPY0Ape.js";import{t as r}from"./_plugin-vue_export-helper-CS_Jz9bW.js";var i={};function a(r,i){let a=n(`RouterView`);return t(),e(a)}var o=r(i,[[`render`,a]]);export{o as default};

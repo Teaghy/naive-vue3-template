@@ -1,0 +1,1 @@
+import{ft as e,tt as t}from"./index-ghPY0Ape.js";import{t as n}from"./_plugin-vue_export-helper-CS_Jz9bW.js";var r={};function i(n,r){return e(),t(`div`,null,`dashboard`)}var a=n(r,[[`render`,i]]);export{a as default};
