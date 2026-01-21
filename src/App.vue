@@ -3,8 +3,7 @@
     :locale="zhCN"
     :date-locale="dateZhCN"
     :theme-overrides="themeOverrides"
-    wh-full
-    overflow-hidden
+    class="wh-full overflow-hidden"
   >
     <AppProvider>
       <RouterView />
@@ -29,7 +28,7 @@ const themeOverrides = {
 };
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 #app {
   font-family:
     PingFang SC,
@@ -47,7 +46,6 @@ const themeOverrides = {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   width: 100%;
   height: 100%;
 }

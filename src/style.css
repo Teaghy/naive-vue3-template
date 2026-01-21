@@ -1,3 +1,21 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .wh-full {
+    @apply w-full h-full;
+  }
+  .f-c-c {
+    @apply flex justify-center items-center;
+  }
+  .flex-col {
+    @apply flex;
+    flex-direction: column;
+  }
+  .text-ellipsis {
+    @apply truncate;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

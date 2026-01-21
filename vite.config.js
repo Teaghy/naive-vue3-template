@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
-import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
 import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
@@ -29,7 +29,7 @@ export default defineConfig({
       ],
       imports: ["vue", "@vueuse/core"],
     }),
-    UnoCSS(),
+    tailwindcss(),
     Components({
       resolvers: [
         // AntDesignVueResolver({

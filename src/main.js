@@ -3,8 +3,7 @@ import App from "./App.vue";
 import { router, setupRouter } from "./router";
 import { setupStore } from "./store";
 
-import "@unocss/reset/normalize.css";
-import "virtual:uno.css";
+import "./style.css";
 import "./styles/index.less";
 
 async function bootstrap() {
