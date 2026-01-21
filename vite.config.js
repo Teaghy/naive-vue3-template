@@ -16,11 +16,6 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      eslintrc: {
-        enabled: true, // <-- this
-        filepath: "./.eslintrc-auto-import.json",
-      },
-      // dts: resolve(baseSrc, './auto-imports.d.ts'),
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         /\.vue$/,
