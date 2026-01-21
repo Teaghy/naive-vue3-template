@@ -12,8 +12,8 @@
 </template>
 
 <script setup>
-import { useLoadingBar, useMessage } from 'naive-ui';
-import { defineComponent, h } from 'vue';
+import { useLoadingBar, useMessage } from "naive-ui";
+import { defineComponent, h } from "vue";
 
 function setupNaiveTools() {
   window.$loadingBar = useLoadingBar();
@@ -25,7 +25,7 @@ const NaiveProviderContent = defineComponent({
     window.$message = useMessage();
   },
   render() {
-    return h('div');
+    return h("div");
   },
 });
 </script>

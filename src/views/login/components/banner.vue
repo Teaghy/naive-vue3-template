@@ -9,7 +9,7 @@
           <div class="carousel-sub-title">
             {{ item.subTitle }}
           </div>
-          <img class="carousel-image" :src="item.image">
+          <img class="carousel-image" :src="item.image" />
         </div>
       </n-carousel>
     </div>
@@ -17,22 +17,22 @@
 </template>
 
 <script setup>
-import bannerImage from '@/assets/login-banner.png';
+import bannerImage from "@/assets/login-banner.png";
 
 const carouselItems = computed(() => [
   {
-    title: '这是一个大标题1',
-    subTitle: '子标题1',
+    title: "这是一个大标题1",
+    subTitle: "子标题1",
     image: bannerImage,
   },
   {
-    title: '这是一个大标题2',
-    subTitle: '子标题2',
+    title: "这是一个大标题2",
+    subTitle: "子标题2",
     image: bannerImage,
   },
   {
-    title: '这是一个大标题3',
-    subTitle: '子标题3',
+    title: "这是一个大标题3",
+    subTitle: "子标题3",
     image: bannerImage,
   },
 ]);

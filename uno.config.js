@@ -1,4 +1,4 @@
-import { presetWind3 } from '@unocss/preset-wind3';
+import { presetWind3 } from "@unocss/preset-wind3";
 import {
   defineConfig,
   presetAttributify,
@@ -7,14 +7,14 @@ import {
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
-} from 'unocss';
+} from "unocss";
 
 export default defineConfig({
   shortcuts: [
-    ['wh-full', 'w-full h-full'],
-    ['f-c-c', 'flex justify-center items-center'],
-    ['flex-col', 'flex flex-col'],
-    ['text-ellipsis', 'truncate'],
+    ["wh-full", "w-full h-full"],
+    ["f-c-c", "flex justify-center items-center"],
+    ["flex-col", "flex flex-col"],
+    ["text-ellipsis", "truncate"],
   ],
   theme: {
     colors: {
@@ -32,8 +32,5 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [
-    transformerDirectives(),
-    transformerVariantGroup(),
-  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 });

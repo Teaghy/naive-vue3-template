@@ -6,7 +6,7 @@ export function setupRouterGuard(router) {
       return true;
     }
     return {
-      name: 'Login',
+      name: "Login",
     };
   });
 }

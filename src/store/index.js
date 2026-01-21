@@ -1,6 +1,6 @@
-import { createPinia } from 'pinia';
+import { createPinia } from "pinia";
 
-export * from './modules';
+export * from "./modules";
 
 const store = createPinia();
 

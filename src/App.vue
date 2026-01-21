@@ -13,8 +13,8 @@
 </template>
 
 <script setup>
-import { AppProvider } from '@/components/Application';
-import { dateZhCN, zhCN } from 'naive-ui';
+import { AppProvider } from "@/components/Application";
+import { dateZhCN, zhCN } from "naive-ui";
 
 /**
  * js 文件下使用这个做类型提示
@@ -22,9 +22,9 @@ import { dateZhCN, zhCN } from 'naive-ui';
  */
 const themeOverrides = {
   common: {
-    primaryColor: '#2484fa',
-    primaryColorHover: '#2484faba', // 悬停状态颜色
-    primaryColorPressed: '#2484faba', // 按下状态颜色
+    primaryColor: "#2484fa",
+    primaryColorHover: "#2484faba", // 悬停状态颜色
+    primaryColorPressed: "#2484faba", // 按下状态颜色
   },
 };
 </script>

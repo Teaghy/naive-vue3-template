@@ -1,4 +1,4 @@
-import { useAppStore } from '@/store';
+import { useAppStore } from "@/store";
 
 function createLoadingManager() {
   let count = 0;

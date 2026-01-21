@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import { setupRouterGuard } from './guard/permission';
-import { setupLoadingBar } from './loadingBar';
-import { basicRoutes } from './routes';
+import { createRouter, createWebHistory } from "vue-router";
+import { setupRouterGuard } from "./guard/permission";
+import { setupLoadingBar } from "./loadingBar";
+import { basicRoutes } from "./routes";
 
 export const router = createRouter({
   routes: [...basicRoutes],
-  history: createWebHistory('/naive-vue3-template/'),
+  history: createWebHistory("/naive-vue3-template/"),
   scrollBehavior: () => ({ left: 0, top: 0 }),
 });
 

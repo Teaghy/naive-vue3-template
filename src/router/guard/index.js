@@ -1,1 +1,1 @@
-export { setupRouterGuard } from './permission';
+export { setupRouterGuard } from "./permission";

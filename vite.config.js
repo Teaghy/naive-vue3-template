@@ -1,27 +1,24 @@
-import { resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import eslintPlugin from '@nabla/vite-plugin-eslint';
-import vue from '@vitejs/plugin-vue';
-import UnoCSS from 'unocss/vite';
-import AutoImport from 'unplugin-auto-import/vite';
-import Icons from 'unplugin-icons/vite';
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
-import Components from 'unplugin-vue-components/vite';
-import { defineConfig } from 'vite';
-import VueDevTools from 'vite-plugin-vue-devtools';
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import vue from "@vitejs/plugin-vue";
+import UnoCSS from "unocss/vite";
+import AutoImport from "unplugin-auto-import/vite";
+import Icons from "unplugin-icons/vite";
+import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
+import Components from "unplugin-vue-components/vite";
+import { defineConfig } from "vite";
+import VueDevTools from "vite-plugin-vue-devtools";
 
-const baseSrc = fileURLToPath(new URL('./src', import.meta.url));
+const baseSrc = fileURLToPath(new URL("./src", import.meta.url));
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/naive-vue3-template/',
+  base: "/naive-vue3-template/",
   plugins: [
-    eslintPlugin(),
     vue(),
     AutoImport({
       eslintrc: {
         enabled: true, // <-- this
-        filepath: './.eslintrc-auto-import.json',
+        filepath: "./.eslintrc-auto-import.json",
       },
       // dts: resolve(baseSrc, './auto-imports.d.ts'),
       include: [
@@ -30,7 +27,7 @@ export default defineConfig({
         /\.vue\?vue/, // .vue
         /\.md$/, // .md
       ],
-      imports: ['vue', '@vueuse/core'],
+      imports: ["vue", "@vueuse/core"],
     }),
     UnoCSS(),
     Components({
@@ -41,26 +38,28 @@ export default defineConfig({
         NaiveUiResolver(),
       ],
     }),
-    Icons({ /* options */ }),
+    Icons({
+      /* options */
+    }),
     VueDevTools(),
   ],
   resolve: {
     alias: [
       {
-        find: '~@',
+        find: "~@",
         replacement: baseSrc,
       },
       {
-        find: '~',
+        find: "~",
         replacement: baseSrc,
       },
       {
-        find: '@',
+        find: "@",
         replacement: baseSrc,
       },
       {
-        find: '~#',
-        replacement: resolve(baseSrc, './enums'),
+        find: "~#",
+        replacement: resolve(baseSrc, "./enums"),
       },
     ],
   },
