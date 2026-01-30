@@ -16,10 +16,14 @@ dist-ssr
 .eslintcache
 
 # Editor directories and files
-.idea
+.idea\
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# AI Skills
+.agents/
+*/skills
